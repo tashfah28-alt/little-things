@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Little Things ✧</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,Arial,sans-serif;
+  background:linear-gradient(135deg,#120b24,#24133d 48%,#0e1028);
+  color:#f8f1ff; line-height:1.7; overflow-x:hidden;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.45;
+  background-image:
+    radial-gradient(circle at 15% 20%,#fff 0 1px,transparent 1.5px),
+    radial-gradient(circle at 80% 15%,#fff 0 1px,transparent 1.5px),
+    radial-gradient(circle at 65% 70%,#fff 0 1px,transparent 1.5px),
+    radial-gradient(circle at 25% 85%,#fff 0 1px,transparent 1.5px);
+  background-size:180px 180px,240px 240px,210px 210px,270px 270px;
+}
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:10;
+  display:flex;justify-content:center;gap:28px;padding:18px;
+  background:rgba(14,10,30,.62);backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+nav a{color:#eadcff;text-decoration:none;font-size:.82rem;letter-spacing:.08em}
+nav a:hover{color:white}
+section{max-width:980px;margin:auto;padding:100px 24px}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding-top:130px}
+.hero-inner{max-width:760px}
+.moon{font-size:2.2rem;margin-bottom:18px;animation:float 4s ease-in-out infinite}
+h1{
+  font-family:"DM Serif Display",Georgia,serif;font-size:clamp(4rem,12vw,8.5rem);
+  line-height:.9;font-weight:400;letter-spacing:-.04em;
+}
+.hero p{max-width:600px;margin:28px auto;color:#d9c9e9;font-size:1.05rem}
+.button{
+  display:inline-block;margin-top:14px;padding:12px 22px;border:1px solid #bca2d8;
+  border-radius:999px;color:white;text-decoration:none;transition:.25s;
+}
+.button:hover{background:#ffffff16;transform:translateY(-2px)}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;color:#bda6d5;margin-bottom:12px}
+h2{font-family:"DM Serif Display",Georgia,serif;font-size:3rem;font-weight:400;margin-bottom:20px}
+.card{
+  background:rgba(255,255,255,.065);border:1px solid rgba(255,255,255,.11);
+  border-radius:24px;padding:28px;backdrop-filter:blur(8px);
+}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.love-card{min-height:180px}
+.love-card .icon{font-size:1.7rem;margin-bottom:14px}
+.love-card h3{margin-bottom:7px;font-size:1rem}
+.love-card p{color:#cdbfda;font-size:.9rem}
+.memories{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.polaroid{background:#f6f0e8;color:#28202d;padding:12px 12px 25px;border-radius:4px;box-shadow:0 15px 35px #0005;transform:rotate(-2deg)}
+.polaroid:nth-child(2){transform:rotate(2deg)}
+.polaroid:nth-child(3){transform:rotate(1deg)}
+.polaroid:nth-child(4){transform:rotate(-1.5deg)}
+.photo{
+  height:180px;display:grid;place-items:center;
+  background:linear-gradient(135deg,#8f70ad,#d5a9c9 55%,#7160a0);
+  font-size:3rem;
+}
+.caption{text-align:center;font-family:"DM Serif Display",serif;padding-top:13px;font-size:1.15rem}
+.thought{text-align:center;padding:55px 25px}
+#thoughtText{font-family:"DM Serif Display",serif;font-size:clamp(1.8rem,4vw,3rem);line-height:1.25;max-width:720px;margin:10px auto 24px}
+footer{text-align:center;padding:50px 20px 70px;color:#bcaec9;font-size:.85rem}
+.heart{display:inline-block;animation:pulse 1.5s infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+@keyframes pulse{50%{transform:scale(1.18)}}
+@media(max-width:700px){
+ nav{gap:14px;padding:14px 8px} nav a{font-size:.68rem}
+ section{padding:80px 18px}.grid,.memories{grid-template-columns:1fr}
+ h2{font-size:2.4rem}.hero{padding-top:100px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">home</a>
+  <a href="#about">about</a>
+  <a href="#loves">things i love</a>
+  <a href="#memories">memories</a>
+  <a href="#thought">thought</a>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="moon">☾ ✦</div>
+    <div class="eyebrow">a tiny corner of the internet</div>
+    <h1>little things.</h1>
+    <p>A tiny place for thoughts, memories, pretty things, and everything that makes life feel a little more magical.</p>
+    <a class="button" href="#about">come in ♡</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="eyebrow">a little about this place</div>
+  <h2>For the things that don't seem important…</h2>
+  <div class="card">
+    <p>
+      Sometimes it's the smallest things that stay with us — a song at the right moment,
+      a late-night conversation, someone's smile, a random picture, a favourite smell,
+      or a memory we didn't know we'd remember.
+    </p>
+    <br>
+    <p>This website is a little collection of those things. ✧</p>
+  </div>
+</section>
+
+<section id="loves">
+  <div class="eyebrow">my little favourites</div>
+  <h2>Things I love ♡</h2>
+  <div class="grid">
+    <div class="card love-card">
+      <div class="icon">🎧</div><h3>Music</h3>
+      <p>Songs that somehow understand feelings better than words do.</p>
+    </div>
+    <div class="card love-card">
+      <div class="icon">🌙</div><h3>Late nights</h3>
+      <p>When everything gets quiet and your brain suddenly has 700 thoughts.</p>
+    </div>
+    <div class="card love-card">
+      <div class="icon">📸</div><h3>Memories</h3>
+      <p>Little moments that deserve to be kept forever.</p>
+    </div>
+    <div class="card love-card">
+      <div class="icon">☕</div><h3>Comfort</h3>
+      <p>Slow mornings, warm drinks, blankets, and feeling at home.</p>
+    </div>
+    <div class="card love-card">
+      <div class="icon">✨</div><h3>Pretty things</h3>
+      <p>Anything that makes an ordinary day feel a little less ordinary.</p>
+    </div>
+    <div class="card love-card">
+      <div class="icon">💌</div><h3>Little gestures</h3>
+      <p>A message, a remembered detail, or someone simply checking in.</p>
+    </div>
+  </div>
+</section>
+
+<section id="memories">
+  <div class="eyebrow">kept here forever</div>
+  <h2>Little memories 📸</h2>
+  <div class="memories">
+    <div class="polaroid"><div class="photo">🌷</div><div class="caption">pretty days</div></div>
+    <div class="polaroid"><div class="photo">☁️</div><div class="caption">soft moments</div></div>
+    <div class="polaroid"><div class="photo">🎀</div><div class="caption">tiny joys</div></div>
+    <div class="polaroid"><div class="photo">🌌</div><div class="caption">midnight thoughts</div></div>
+  </div>
+</section>
+
+<section id="thought">
+  <div class="card thought">
+    <div class="eyebrow">a thought for you</div>
+    <div id="thoughtText">Maybe the little things aren't actually little.</div>
+    <button class="button" onclick="newThought()">another one ✦</button>
+  </div>
+</section>
+</main>
+
+<footer>
+  made with a little bit of love <span class="heart">♡</span>
+</footer>
+
+<script>
+const thoughts = [
+  "Maybe the little things aren't actually little.",
+  "Some memories feel like places we can still visit.",
+  "You don't have to make every moment meaningful. Just notice it.",
+  "One day, you'll miss an ordinary day because you didn't know it was special.",
+  "A tiny moment can become a favourite memory.",
+  "It's okay to romanticise the life you're already living.",
+  "Some of the best things happen when you aren't looking for them.",
+  "Keep the people who make ordinary moments feel special."
+];
+
+function newThought(){
+  const el=document.getElementById("thoughtText");
+  let next;
+  do { next=thoughts[Math.floor(Math.random()*thoughts.length)] }
+  while(next===el.textContent && thoughts.length>1);
+  el.style.opacity=0;
+  setTimeout(()=>{el.textContent=next;el.style.opacity=1},180);
+}
+</script>
+</body>
+</html>
